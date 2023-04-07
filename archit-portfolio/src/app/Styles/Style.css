@@ -1,0 +1,62 @@
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    color: whitesmoke !important;
+    background: linear-gradient(to left, black 50%, #08FDD8 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+
+}
+
+.sidenav a:hover {
+    background-position: left;
+    color: black !important;
+}
+
+.sidenavItem {
+    padding: 4px;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.text-main {
+
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    
+
+
+
+}
+
+.info-cont {
+
+    display: block;
+    background: linear-gradient(to left, black 50%, #08FDD8 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+
+}
+
+.info-cont:hover {
+    background-position: left;
+    color: black !important;
+    font-weight: bolder;
+}
