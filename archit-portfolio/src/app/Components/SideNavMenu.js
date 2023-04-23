@@ -6,7 +6,7 @@ const SideNavMenu = () => {
 
     const [mouseOver, setMouseOver] = useState(false)
 
-    const navItems = [{ label: "About Me " }, { label: "Work" }, { label: "My Skills " }, { label: "Contact" }, { label: "Blogs  " }]
+    const navItems = [{ label: "Work" }, { label: "My Skills " }, { label: "Contact" }, { label: "Blogs  " }]
 
     return (
         <div>
