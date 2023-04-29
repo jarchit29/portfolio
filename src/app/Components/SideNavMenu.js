@@ -24,9 +24,9 @@ const SideNavMenu = () => {
                 <div className='mt-5'>
 
                     {
-                        navItems.map((item) => {
+                        navItems.map((item,index) => {
                             return (
-                                <div className='sidenavItem'>
+                                <div className='sidenavItem' key={index}>
                                     <a> {item.label} </a>
 
                                 </div>
