@@ -79,12 +79,40 @@ const IntroDuction = () => {
                     </div>
                 </section>
 
-                <section id="third">
-                    <h1>Goodbye!</h1>
+                <section id="third" className='topCont'>
+                <div>
+                        <img src='feather.svg.png' className='imgCont' />
+                    </div>
+
+                    <div>
+                        <h1>
+                            Join my hand in ,  
+                        </h1>
+                        <div className='mt-3 flexDisplay'>
+                            <h1 style={{color:'#08FDD8'}}>D</h1> <h1>igitalizing  </h1> <h1  style={{color:'#08FDD8',marginLeft:'7px'}}> B</h1> <h1>uisness</h1>
+                        </div>
+                        <div className='mt-3'>
+                            Contact me
+                        </div>
+                    </div>
                 </section>
 
-                <section id="fourth">
-                    hi
+                <section id="fourth" className='topCont'>
+                <div>
+                        <img src='feather.svg.png' className='imgCont' />
+                    </div>
+
+                    <div>
+                        <h1>
+                            Join my hand in ,  
+                        </h1>
+                        <div className='mt-3 flexDisplay'>
+                            <h1 style={{color:'#08FDD8'}}>D</h1> <h1>igitalizing  </h1> <h1  style={{color:'#08FDD8',marginLeft:'7px'}}> B</h1> <h1>uisness</h1>
+                        </div>
+                        <div className='mt-3'>
+                            Contact me
+                        </div>
+                    </div>
                 </section>
             </>
 
