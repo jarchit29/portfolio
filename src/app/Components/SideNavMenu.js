@@ -1,19 +1,20 @@
 "use client";
 
-import {React, useState } from 'react'
+import { React, useState } from 'react'
+import Link from 'next/link';
 
 const SideNavMenu = () => {
 
     const [mouseOver, setMouseOver] = useState(false)
 
-    const navItems = [{ label: "Work" }, { label: "My Skills " }, { label: "Contact" }, { label: "Blogs  " }]
+    const navItems = [{ label: "Work", routeTo: 'Work' }, { label: "My Skills ", routeTo: 'mySkills' }, { label: "Contact", routeTo: 'contact' }, { label: "Blogs  ", routeTo: 'blogs' }]
 
     return (
         <div>
 
             <div className='sidenav'>
                 <div>
-                    {mouseOver?<img id = 'sideImg' src='b.png' onMouseOver={()=>{setMouseOver(!mouseOver)}} />:<img id = 'sideImg' src='3.png' onMouseOver={()=>{setMouseOver(!mouseOver)}} />}
+                    {mouseOver ? <img id='sideImg' src='b.png' onMouseOver={() => { setMouseOver(!mouseOver) }} /> : <img id='sideImg' src='3.png' onMouseOver={() => { setMouseOver(!mouseOver) }} />}
                 </div>
                 <div className='mt-2 info-cont'>
 
@@ -24,10 +25,14 @@ const SideNavMenu = () => {
                 <div className='mt-5'>
 
                     {
-                        navItems.map((item,index) => {
+                        navItems.map((item, index) => {
                             return (
                                 <div className='sidenavItem' key={index}>
-                                    <a> {item.label} </a>
+                                    <>
+                                        <Link href='work'>{item.label}</Link>
+                                    </>
+
+
 
                                 </div>
                             )

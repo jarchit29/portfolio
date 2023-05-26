@@ -4,6 +4,7 @@ import SideNavMenu from '../Components/SideNavMenu'
 import Footer from '../Components/Footer'
 
 import IntroDuction from './IntroDuction'
+import Layout from '../Components/Layout'
 
 // Import from libraries 
 import { useState, React } from 'react'
@@ -15,12 +16,10 @@ const UserDashBoard = () => {
   return (
     <div>
 
-      <SideNavMenu />
 
-      <div className='clearLeft'>
-        <IntroDuction />
+     <IntroDuction/>
+     
 
-      </div>
 
       <Footer />
 

@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Head from 'next/head'
 import UserDashBoard from '../app/Pages/UserDashBoard'
 import '../app/Styles/Style.css'
+import Layout from './Components/Layout'
 
 
 export default function Home() {
@@ -12,10 +13,13 @@ export default function Home() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-     <UserDashBoard/>
-      
-      
-    
+      <Layout>
+
+        <UserDashBoard />
+      </Layout>
+
+
+
     </>
   )
 }

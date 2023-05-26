@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
+// import Button from '../Components/Button'
+
 const IntroDuction = () => {
 
     const [section, setSection] = useState(1);
@@ -93,6 +95,7 @@ const IntroDuction = () => {
                         </div>
                         <div className='mt-3'>
                             Contact me
+                        {/* <Button/> */}
                         </div>
                     </div>
                 </section>
